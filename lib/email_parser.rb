@@ -4,13 +4,13 @@
 # or whitespace (' ').
 class EmailAddressParser 
   
-  attr_accessor :name
+  attr_accessor :emails
   
-  def initialize(csv_emails)
-    @csv_emails = csv_emails
+  def initialize(email)
+    @emails = email
   end
   
   def parse
-    @parse = parse.join
+    emails.delete(",").split.uniq
   end
 end
