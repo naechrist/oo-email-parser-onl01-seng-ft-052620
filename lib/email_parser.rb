@@ -11,6 +11,6 @@ class EmailAddressParser
   end
   
   def parse
-    @parse = parse.uniq
+    @parse = parse.join
   end
 end
